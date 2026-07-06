@@ -1,0 +1,11 @@
+# Maven
+target/
+
+# VS Code / Eclipse specific
+.vscode/
+.classpath
+.project
+.settings/
+
+# Compiled class files
+*.class

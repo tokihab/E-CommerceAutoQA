@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="4" parallel="methods" name="Failed suite [ProductSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="4" parallel="methods" name="Test Products Page(failed)">
+    <classes>
+      <class name="tests.PDHS">
+        <methods>
+          <include name="TPS"/>
+          <include name="TPC"/>
+          <include name="TPR"/>
+          <include name="initPages"/>
+          <include name="TPD"/>
+          <include name="closeBrowser"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- tests.PDHS -->
+    </classes>
+  </test> <!-- Test Products Page(failed) -->
+</suite> <!-- Failed suite [ProductSuite] -->

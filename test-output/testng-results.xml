@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-05-09T01:40:37 EEST" name="Default suite" finished-at="2025-05-09T01:41:49 EEST" duration-ms="72078">
+    <groups>
+    </groups>
+    <test started-at="2025-05-09T01:40:37 EEST" name="Default test" finished-at="2025-05-09T01:41:49 EEST" duration-ms="72078">
+      <class name="tests.PDHS">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:tests.PDHS@11981797]" started-at="2025-05-09T01:40:37 EEST" name="openBrowser" finished-at="2025-05-09T01:40:38 EEST" duration-ms="1098" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method signature="TPD()[pri:1, instance:tests.PDHS@11981797]" started-at="2025-05-09T01:40:38 EEST" name="TPD" finished-at="2025-05-09T01:40:56 EEST" duration-ms="18190" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TPD -->
+        <test-method signature="TPS()[pri:2, instance:tests.PDHS@11981797]" started-at="2025-05-09T01:40:56 EEST" name="TPS" finished-at="2025-05-09T01:41:10 EEST" duration-ms="13789" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TPS -->
+        <test-method signature="TPR()[pri:3, instance:tests.PDHS@11981797]" started-at="2025-05-09T01:41:10 EEST" name="TPR" finished-at="2025-05-09T01:41:27 EEST" duration-ms="17160" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TPR -->
+        <test-method signature="TPC()[pri:4, instance:tests.PDHS@11981797]" started-at="2025-05-09T01:41:27 EEST" name="TPC" finished-at="2025-05-09T01:41:49 EEST" duration-ms="21340" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TPC -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:tests.PDHS@11981797]" started-at="2025-05-09T01:41:49 EEST" name="closeBrowser" finished-at="2025-05-09T01:41:49 EEST" duration-ms="414" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- tests.PDHS -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

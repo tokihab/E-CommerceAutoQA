@@ -2,25 +2,28 @@ package tests;
 
 import org.testng.annotations.BeforeTest;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.testng.annotations.AfterTest;
 
 public class TestBase {
-	
-	WebDriver driver = new ChromeDriver();
-	String baseUrl = "https://automationexercise.com/";
+  public static WebDriver driver; 
+  String baseUrl = "https://automationexercise.com/";
 
   @BeforeTest
   public void openBrowser() {
-	  
-	  driver.manage().window().maximize();
-	  driver.navigate().to(baseUrl);
-	  
+
+    FirefoxOptions options = new FirefoxOptions();
+    driver = new FirefoxDriver(options);
+    
+    driver.manage().window().maximize();
+    driver.navigate().to(baseUrl);
   }
   
   @AfterTest
   public void closeBrowser() {
-	  driver.quit();
+    if (driver != null) {
+      driver.quit();
+    }
   }
-
 }

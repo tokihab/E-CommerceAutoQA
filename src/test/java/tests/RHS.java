@@ -1,6 +1,7 @@
 package tests;
 
 import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import pages.HomePage;
@@ -8,13 +9,19 @@ import pages.RegisterPage;
 
 public class RHS extends TestBase {
 	
-	HomePage homeObj = new HomePage(driver);
-	RegisterPage registerObj = new RegisterPage(driver);
+	HomePage homeObj;
+    RegisterPage registerObj; 
+    
+    @BeforeClass
+    public void setupPages() {
+        homeObj = new HomePage(driver);
+        registerObj = new RegisterPage(driver); 
+    }
 	
   @Test
   public void TR() throws InterruptedException {
 	  
-	  Assert.assertEquals("rgba(255, 165, 0, 1)",homeObj.homeBTN.getCssValue("color"));
+	  Assert.assertEquals("rgb(255, 165, 0)",homeObj.homeBTN.getCssValue("color"));
 	  
 	  homeObj.openSU();
 	  Thread.sleep(3000);
@@ -40,7 +47,7 @@ public class RHS extends TestBase {
   	  
   	  registerObj.continueACC();
   	  Thread.sleep(3000);
-  	  Assert.assertEquals("rgba(255, 165, 0, 1)", homeObj.homeBTN.getCssValue("color"));
+  	  Assert.assertEquals("rgb(255, 165, 0)", homeObj.homeBTN.getCssValue("color"));
   	  
   }
   

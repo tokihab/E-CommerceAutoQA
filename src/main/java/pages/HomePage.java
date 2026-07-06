@@ -3,6 +3,7 @@ package pages;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.JavascriptExecutor;
 
 public class HomePage extends PageBase {
 	
@@ -28,7 +29,8 @@ public class HomePage extends PageBase {
 	}
 	
 	public void openPP() {
-		productsBTN.click();
-	}
+    JavascriptExecutor js = (JavascriptExecutor) driver;
+    js.executeScript("arguments[0].click();", productsBTN);
+  }
 
 }
